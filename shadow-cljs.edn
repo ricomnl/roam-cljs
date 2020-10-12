@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/main"
+  "src/test"]
+
+ :dependencies
+ []
+
+ :builds
+ {:script
+  {:target :node-script
+   :main scify.app/main
+   :output-to "resources/public/scripts/script.js"}}
+ }
